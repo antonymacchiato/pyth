@@ -1,0 +1,4 @@
+def translate_to_bober_kurwa(text):
+    return text.replace(" ", " bober kurwa ")
+
+print(translate_to_bober_kurwa("Python is fun"))
