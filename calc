@@ -1,0 +1,9 @@
+def bober_kurwa_calculator(a, b, operation):
+    if operation == "+":
+        return f"Bober kurwa says: {a + b}"
+    elif operation == "-":
+        return f"Bober kurwa says: {a - b}"
+    else:
+        return "Bober kurwa doesn't know this operation!"
+
+print(bober_kurwa_calculator(10, 5, "+"))
