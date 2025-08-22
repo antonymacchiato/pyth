@@ -4,7 +4,10 @@
 # Description: Fetch weather data using an external API.
 
 import requests
+from cachetools import cached, TTLCache
+cache = TTLCache(maxsize=100, ttl=300)  
 
+@cached(cache)
 def get_weather(city, api_key):
     try:
         url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
